@@ -1,0 +1,20 @@
+<!--<p>{{imprimir_letra(name)}}</p>-->
+<h1>Eventos</h1>
+<button [disabled]="btn_disabled">Enviar</button>
+<button (click)="toggle_button()">Toggle</button>
+<button (click)="Aumentar_edad()">Aumento</button>
+<h1>{{age}}</h1>
+<hr/>
+<h1>Propiedades</h1>
+<button [disabled]="btn_disabled">Enviar</button>
+<input type="text" value="{{person.name}}"/>
+<progress max="100" value="{{person.age}}"></progress>
+<img width="100" height="100" src="{{person.img}}" alt="">
+<hr/>
+<h1>Hola mundo</h1>
+<h2>{{'Hola mundo'.repeat(5)}}</h2>
+<p>3 + 3 = {{3 + 3}}</p>
+<h3>Hola soy {{name}} y tengo {{age}}</h3>
+<img src={{img}} alt="image">
+<h1>Hola Jhosebro tu nombre al reves es:</h1>
+<h1>{{imprimir_nombre_al_reves('Jhosebro')}}</h1>
